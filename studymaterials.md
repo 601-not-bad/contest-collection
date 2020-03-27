@@ -1,0 +1,10 @@
+1.chisel教程  
+https://blog.csdn.net/qq_34291505/article/details/86744581  
+2.rocketchip代码解读  
+https://www.cnblogs.com/wjcdx/tag/rocket/default.html?page=7  
+https://github.com/Intensivate/learning-journey/wiki/Introduction-to-Rocket-Chip-code-style  
+https://github.com/cnrv/rocket-chip-read  
+3.知乎上材料汇总  
+https://zhuanlan.zhihu.com/p/100151292  
+4.国内推广riscv网站，里面很多相关资源
+https://cnrv.io/
