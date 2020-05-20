@@ -17,4 +17,6 @@
   2048的话ram为8kb,情况和4MB一样,运行失败  
   4096的话ram为16kb,情况和4MB一样，运行失败  
   找到原因，地址宽度没有匹配的问题  
-  继续尝试axi4接口ram,依旧不能从ram中读取指令，查看axi4接口的信号，发现读地址通道的arready一直为x，说明地址信号并没传到ram,尚不清楚为什么axi4-lite的ready/valid正常工作但是axi4的ready/valid不能正常工作，理论上axi4-lite的ready/valid正常的话，axi4d的ready/valid也应该正常工作
+  继续尝试axi4接口ram,依旧不能从ram中读取指令，查看axi4接口的信号，发现读地址通道的arready一直为x，说明地址信号并没传到ram,尚不清楚为什么axi4-lite的ready/valid正常工作但是axi4的ready/valid不能正常工作，理论上axi4-lite的ready/valid正常的话，axi4d的ready/valid也应该正常工作  
+- 5-20  
+  目前可以确定是读地址通道的arready信号出了问题 ,在阅读相关协议和xilinx的相关文档，无进展。
