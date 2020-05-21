@@ -25,3 +25,5 @@
   
 - 5-20  
   目前可以确定是读地址通道的arready信号出了问题 ,在阅读相关协议和xilinx的相关文档，无进展。
+- 5-21  
+  使用xilinx axi4中的ip将axi4-lite转为axi4,在此基础上添加axi4接口的bram,成功读取数据。下一步，添加axi4的crossbar
