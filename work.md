@@ -33,3 +33,12 @@
   学习生成内存控制器，根据板子参数进行具体设置，添加一些管脚约束，需要弄清楚控制器模块的输入输出，同时应该需要板子支持进行下一步实验。
 - 5-24/25  
   生成bit文件，成功运行freertos,在freertos操作系统基础上成功打印risc-v  
+- 5-26  
+  研究如何联网，编写Xilinx Ethernet Lite (EmacLite) driver驱动
+- 5-29  
+  1.第一版本的mac driver需要进行测试（主要难点，需要ping通服务器）  
+  2.在fpga上成功运行FreeRTOS操作系统  
+  3.通过C语言方式从挂载的ram的中读写数据(挂载ram后仿真成功，但尚未成功生成bit流)  
+  4.由于faga自带flash,程序可以直接下载到flash中，所以不需要SD卡也能够成功运行程序  
+  5.FreeRTOS编译后为40KB左右，FPGA有607.5KB ram,所以编译后的程序可以全部加载到itcm（类似于cache的部件）  
+  6.由于时间比较紧张，目前主要想实现互联网ping通，获取一张图片到ram，然后显示并识别  
